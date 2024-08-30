@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    color: white;
+    z-index: 1000;
+}
+
+.menu-icon {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #444;
+}
+
+.menu-items {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+}
+
+.menu-items a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.menu-items a:hover {
+    background-color: #555;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    background-color: #eee;
+    position: relative;
+}
+
+.currency, .tesla {
+    margin-left: 15px;
+}
+
+.gift-box {
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.screen {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.footer-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.footer-nav button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer-nav button:hover {
+    color: #ddd;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#loginMessage, #newPasswordMessage {
+    margin-top: 10px;
+    color: red;
+}

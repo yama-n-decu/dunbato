@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>勝ちゲーム</title>
+    <link rel="stylesheet" href="デザイン.css">
+</head>
+<body>
+    <!-- ログイン画面 -->
+    <div id="login" class="screen">
+        <div class="content">
+            <h2>ログイン</h2>
+            <input type="text" id="usernameInput" placeholder="ユーザー名を入力">
+            <input type="password" id="passwordInput" placeholder="パスワードを入力">
+            <button onclick="login()">ログイン</button>
+            <div id="loginMessage"></div>
+        </div>
+    </div>
+
+    <!-- 新規パスワード作成画面 -->
+    <div id="newPassword" class="screen" style="display: none;">
+        <div class="content">
+            <h2>固有のパスワードを作成してください</h2>
+            <input type="text" id="newUsernameInput" placeholder="ユーザー名を入力">
+            <input type="password" id="newPasswordInput" placeholder="新しいパスワードを入力">
+            <button onclick="createPassword()">作成</button>
+            <div id="newPasswordMessage"></div>
+        </div>
+    </div>
+
+    <!-- トップ画面 -->
+    <div id="top" class="screen" style="display: none;">
+        <div class="header">
+            <div class="currency">〇〇〇c</div>
+            <div class="tesla">〇〇〇pt</div>
+            <div class="gift-box" onclick="showScreen('gift')">🎁</div>
+        </div>
+        <div class="content">
+            <!-- トップ画面のコンテンツ -->
+        </div>
+    </div>
+
+    <!-- キャラガチャ画面 -->
+    <div id="charGacha" class="screen" style="display: none;">
+        <div class="header">
+            <div class="currency">〇〇〇c</div>
+            <div class="tesla">〇〇〇pt</div>
+        </div>
+        <div class="content">
+            <!-- キャラガチャ画面のコンテンツ -->
+        </div>
+    </div>
+
+    <!-- アイテムガチャ画面 -->
+    <div id="itemGacha" class="screen" style="display: none;">
+        <div class="header">
+            <div class="currency">〇〇〇c</div>
+            <div class="tesla">〇〇〇pt</div>
+        </div>
+        <div class="content">
+            <!-- アイテムガチャ画面のコンテンツ -->
+        </div>
+    </div>
+
+    <!-- バトル画面 -->
+    <div id="battle" class="screen" style="display: none;">
+        <div class="header">
+            <div class="currency">〇〇〇c</div>
+            <div class="tesla">〇〇〇pt</div>
+        </div>
+        <div class="content">
+            <!-- バトル画面のコンテンツ -->
+        </div>
+    </div>
+
+    <!-- パーティー編成画面 -->
+    <div id="party" class="screen" style="display: none;">
+        <div class="header">
+            <div class="currency">〇〇〇c</div>
+            <div class="tesla">〇〇〇pt</div>
+        </div>
+        <div class="content">
+            <!-- パーティー編成画面のコンテンツ -->
+        </div>
+    </div>
+
+    <!-- ステータス画面 -->
+    <div id="status" class="screen" style="display: none;">
+        <div class="header">
+            <div class="currency">〇〇〇c</div>
+            <div class="tesla">〇〇〇pt</div>
+        </div>
+        <div class="content">
+            <!-- ステータス画面のコンテンツ -->
+        </div>
+    </div>
+
+    <!-- プレゼント画面 -->
+    <div id="gift" class="screen" style="display: none;">
+        <div class="header">
+            <div class="currency">〇〇〇c</div>
+            <div class="tesla">〇〇〇pt</div>
+        </div>
+        <div class="content">
+            <button onclick="showScreen('top')">戻る</button>
+        </div>
+    </div>
+
+    <!-- フッターナビゲーション -->
+    <footer>
+        <div class="footer-nav">
+            <button onclick="showScreen('top')">トップ</button>
+            <button onclick="showScreen('charGacha')">キャラガチャ</button>
+            <button onclick="showScreen('itemGacha')">アイテムガチャ</button>
+            <button onclick="showScreen('battle')">バトル</button>
+            <button onclick="showScreen('party')">パーティー</button>
+            <button onclick="showScreen('status')">ステータス</button>
+        </div>
+    </footer>
+
+    <script src="移動.js"></script>
+</body>
+</html>
